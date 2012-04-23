@@ -1,4 +1,4 @@
 mootools-placeholder-polyfill
 =============================
 
-A MooTools based HTML5 placeholder polyfill
+A simple MooTools based HTML5 placeholder polyfill.

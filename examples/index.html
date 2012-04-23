@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	body, input, textarea {
+		font: normal 1em/1.4em Arial, sans-serif;
+	}
+	form .control {
+		position: relative;
+	}
+	label.js-placeholder {
+		position: absolute;
+		top: 2px; left: 3px;
+		cursor: text;
+		color: #999988;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="control">
+			<input type="text" placeholder="Type something...">
+		</div>
+		<br>
+		<div class="control">
+			<textarea placeholder="Type something more..."></textarea>
+		</div>
+	</form>
+
+	<script src="mootools-core-1.4.5.js"></script>
+	<script src="../placeholder.js"></script>
+	<script>
+	window.addEvent('domready', function() {
+		$$('[placeholder]').each(function(element, index) {
+			new Polyfill.Placeholder(element, index);		
+		});
+	});
+	</script>
+</body>
+</html>
